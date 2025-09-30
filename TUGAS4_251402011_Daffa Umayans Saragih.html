@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Full Bootstrap 4</title>
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: rgb(110, 205, 237);
+    }
+
+    .navbar-nav .nav-item:hover {
+      background-color: #6f42c1;
+      border-radius: 4px;
+    }
+    .btn{
+      background-color: greenyellow;
+    }
+    .card{
+    justify-content: space-between;
+    background-color: aqua;
+    flex: auto;
+    outline: none;
+    border: none;
+    }
+    .card-title{
+      color: black;
+      text-align: center;
+      font-size: 40px;
+      font-family: 'montserrat', sans-serif;
+    }
+    body {
+    background-color: rgb(110, 205, 237);
+    }
+
+    .body {
+      background-color: rgb(110, 205, 237);
+    }
+
+    .container {
+      background-color: rgb(110, 205, 237);
+    }
+    /* Bar untuk judul section */
+    .bar {
+        background-color: blue;
+        padding: 15px;
+        margin: 40px 0 20px ;
+        border-left: 5px solid rgb(110, 205, 237);
+        
+    }
+
+    .bar h2 {
+        color: #333;
+    }
+    .navbar img {
+      float:left;
+      align-self: center;
+      margin-top: 10px;
+      margin-right: 10px;
+      margin-left: 10px;  
+      margin-bottom: 10px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+    }
+    .LOGOUT {
+      float:left;
+      align-self: left;
+      background-color: #007bff;
+      color: black;
+      text-align: left;
+      padding-top: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+    }
+    .LOGOUT:hover {
+      background-color: #6f42c1;
+      color: white;
+      border-radius: 4px;
+    }
+            /* Container card */
+        .card-container {
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        /* Card */
+        .card {
+            width: 30%;
+            float: left;
+            margin: 0 1.5% 20px;
+            background-color: aquamarine;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card1 {
+            width: 99%;
+            float: left;
+            margin: 0 1.5% 20px;
+            background-color: aquamarine;
+            border: 1px solid aquamarine;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card2 {
+            width: 22%;
+            float: left;
+            margin: 0 1.5% 20px;
+            background-color: aquamarine;
+            border: 1px solid aquamarine;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card1 img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .card2 img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        
+        .card-content {
+            padding: 15px;
+        }
+        
+        .card h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .card p {
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .card-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+        
+        .card-button:hover {
+            background-color: #45a049;
+        }
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        
+
+
+/* Media Queries untuk Responsivitas */
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+    .card {
+        width: 47%;
+        margin: 0 1.5% 20px;
+    }
+    .card1 {
+        width: 47%;
+        margin: 0 1.5% 20px;
+    }
+    .card2 {
+        width: 47%;
+        margin: 0 1.5% 20px;
+    }
+    .card-title{
+        font-size: 30px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .card {
+        width: 100%;
+        margin: 0 0 20px;
+        float: none;
+    }
+    .card1 {
+        width: 100%;
+        margin: 0 0 20px;
+        float: none;
+    }
+    .card2 {
+        width: 100%;
+        margin: 0 0 20px;
+        float: none;
+    }
+        
+    .container {
+        margin-top: 150px;
+    }
+    .card-title{
+        font-size: 10px;
+    }
+}
+
+
+  </style>
+</head>
+<img>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+  <a class="navbar-brand" href="#"> 
+    <img src="user.jpg" alt="user">
+    <a class="LOGOUT"  href="login.html">LOG OUT</a>
+  </a>
+  
+  <button class="navbar-toggler" type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+ 
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+      <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#AboutMe">About Me</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Achivement
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#2023">2023</a>
+          <a class="dropdown-item" href="#2024">2024</a>
+          <a class="dropdown-item" href="#2025">2025</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Project
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#tokokue">TOKO KUE</a>
+          <a class="dropdown-item" href="#FORM-DATA">FORM DATA</a>
+          <a class="dropdown-item" href="#travel">TRAVEL UDIN</a>
+          <a class="dropdown-item" href="#kalkulator">KALKULATOR SEGIH</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link disabled" href="#"></a></li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+
+
+
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col align-self-center">
+      <h1>Selamat datang di website ProWeb Saya</h1>
+      <p>Mari kita berkenalan, Ibarat kata tak kenal maka tak sayang. ʚ♡⃛ɞ(ू•ᴗ•ू❁)</p>
+    </div>
+    <div>
+      <img src="foto.png" alt="GAMBAR" style="width:100%;">
+    </div>
+  </div>
+
+  <div class="bar" id="AboutMe">
+    <div class="card-body">
+      <h5 class="card-title" >About Me</h5>
+    </div>
+  </div>
+  
+  <div class="card-container">
+    <div class="card1">
+        <img src="fotousu1.jpg" alt="Gambar Produk 1"> </img>
+        <div class="card-content">
+            <h3>Daffa Umayans Saragih</h3>
+            <p>Halo! Nama saya Daffa Umayans Saragih, seorang mahasiswa yang saat ini menempuh pendidikan di Universitas Sumatera Utara. Saya memiliki minat yang besar dalam bidang teknologi dan seni, serta aktif dalam berbagai kegiatan ekstrakurikuler di sekolah. Selain itu, saya juga senang berinteraksi dengan orang-orang baru dan belajar hal-hal baru setiap hari. Saya berharap dapat terus berkembang dan mencapai impian saya di masa depan. Mari berkenalan</p>
+            <a href="https://wa.me/6285769737410" class="card-button">HUBUNGI WA</a>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="bar" id="Achivement">
+    <div class="card-body">
+      <h5 class="card-title">Achivement</h5>
+    </div>
+  </div>
+
+  <div class="card-continer">
+    
+      <div class="card" id="2023">
+          <img src="2023.jpg" alt="Gambar 1">
+          <div class="card-content">
+              <h3>2023</h3>
+              <p>Tahun 2023 merupakan masa yang sangat berarti bagi saya. Pada periode ini, saya masih duduk di kelas 1 SMA, namun sudah berhasil meraih berbagai prestasi penting yang membanggakan perjalanan awal saya.</p>
+              <a href="https://www.instagram.com/p/DKpryDuTeBs/?igsh=NzlyNG1zZXIzc3px" class="card-button" target="_blank">Lihat Detail</a>
+          </div>
+      </div>
+      
+      
+      <div class="card" id="2024">
+          <img src="2024.jpg" alt="Gambar 2">
+          <div class="card-content">
+              <h3>2024</h3>
+              <p>Tahun 2024 menjadi masa yang penuh arti dalam hidup saya. Sebagai siswa kelas 2 SMA, saya kembali berhasil menorehkan sejumlah prestasi berharga yang menguatkan semangat, dan motivasi besar untuk terus maju.</p>
+              <a href="https://www.instagram.com/p/DKqN26myntI/?igsh=MTQ5bTN4dmdma3RzcQ==" class="card-button" target="_blank">Lihat Detail</a>
+          </div>
+      </div>
+      
+      
+      <div class="card" id="2025">
+          <img src="2025.png" alt="Gambar 3">
+          <div class="card-content">
+              <h3>2025</h3>
+              <p>Tahun 2025 hadir sebagai masa yang benar-benar istimewa bagi saya. Ketika berada di kelas 3 SMA, saya memperoleh pengalaman berharga serta prestasi baru yang memberikan bekal penting dalam melangkah menuju masa depan.</p>
+              <a href="https://www.instagram.com/p/DKqV7NByeW_/?igsh=MTA4NTgxbHp1OHlhdQ==" class="card-button" target="_blank">Lihat Detail</a>
+          </div>
+      </div>
+  </div>
+
+    <div class="card-container">
+        <div class="bar"  id ="Project">
+          <div class="card-body">
+            <h5 class="card-title">Project</h5>
+          </div>
+        </div>
+ 
+      <div class="card2" id="tokokue">
+          <img src="kue.jpg" alt="Gambar kue">
+          <div class="card-content">
+              <h3>TOKO BAHAN KUE</h3>
+              <p>Penuhi kebutuhan bahan kue mu dengan harga yang murah dan tetap terjamin kualitasnya hanya di TOKO CICI MEY </p>
+              <a href="https://daffa-umayans-saragih.github.io/251402011_Daffa-Umayans-Saragih_TUGAS2Prak.P.W._B1./" class="card-button" target="_blank">KUNJUNGI SEKARANG</a>
+          </div>
+      </div>
+      
+     
+      <div class="card2" id="FORM-DATA">
+          <img src="form.jpg" alt="Gambar form">
+          <div class="card-content">
+              <h3>Regristasi Data dan Akun mahasiswamu</h3>
+              <p>Segera regristasi data kemahasiswaanmu agar terintregasi dengan sistem dan dapatkan benefitnya</p>
+              <a href="https://daffa-umayans-saragih.github.io/251402011_Daffa-Umayans-Saragih_TUGAS1PG.WEB/=" class="card-button" target="_blank">AYUK DAFTAR</a>
+          </div>
+      </div>
+      
+      
+      <div class="card2" id="travel">
+          <img src="pesan.jpg" alt="Gambar Produk 3">
+          <div class="card-content">
+              <h3>TRAVEL UDIN MANTUL</h3>
+              <p>Anda bosan? Anda stress karena banyak tugas? Jangan khawatir karena dengan Travel bang udin semua jadi happy</p>
+              <a href="https://daffa-umayans-saragih.github.io/251402011__DaffaUmayansSaragihTugas_1_Praktikum_Pemrograman_Web_B1/?Nama=adsxds&Email=nhh%40fgv&NomorHP=0854547567&Destinasi=Padang&Tanggal+Berangkat=2025-09-03&Waktu+Berangkat=23%3A25&Jumlah+Penumpang=1&Pilihan+Armada=Mobil+Hiace&KTP=TUGAS1PRAKWEB.html" class="card-button" target="_blank">PESAN TRAVEL</a>
+          </div>
+      </div>
+      <div class="card2" id="kalkulator">
+          <img src="kalkulator.jpg" alt="Gambar 3">
+          <div class="card-content">
+              <h3>kalkulator segih(sederhana tapi canggih)</h3>
+              <p>anda cape menghitung manual? Paranoid salah hitung? Tapi mau cepat. kami solusinya</p>
+              <a href="https://daffa-umayans-saragih.github.io/251402011_Daffa-Umayans-Saragih_TUGAS1PG.WEB/kalkulator.html" class="card-button" target="_blank">PESAN TRAVEL</a>
+          </div>
+      </div>
+
+    </div>
+
+
+  
+</div>
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+      <p class="mb-0">&copy; 2025 Daffa Umayans Saragih. All Rights Reserved.</p>
+  </footer>
+
+    <!-- JS Bootstrap 4 -->
+<!-- JS Bootstrap 4 -->
+<script src="js/bootstrap.bundle.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
